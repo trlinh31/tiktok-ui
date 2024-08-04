@@ -5,5 +5,12 @@
   "sidebar.title.live": "LIVE",
   "sidebar.following.heading": "Following accounts",
 
-  "search.input.placeholder": "Search"
+  "search.input.placeholder": "Search",
+  "label.setting.viewProfile": "View Profile",
+  "label.setting.settings": "Settings",
+  "label.setting.darkMode": "Dark Mode",
+  "label.setting.logout": "Logout",
+  "label.setting.language.choose": "Choose Language",
+  "label.setting.language.vn": "Vietnamese",
+  "label.setting.language.en": "English"
 }

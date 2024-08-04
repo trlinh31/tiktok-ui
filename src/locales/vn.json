@@ -5,5 +5,12 @@
   "sidebar.title.live": "LIVE",
   "sidebar.following.heading": "Các tài khoản đang Follow",
 
-  "search.input.placeholder": "Tìm kiếm"
+  "search.input.placeholder": "Tìm kiếm",
+  "label.setting.viewProfile": "Xem hồ sơ",
+  "label.setting.settings": "Cài đặt",
+  "label.setting.darkMode": "Chế độ tối",
+  "label.setting.logout": "Đăng xuất",
+  "label.setting.language.choose": "Chọn ngôn ngữ",
+  "label.setting.language.vn": "Tiếng Việt",
+  "label.setting.language.en": "English"
 }
