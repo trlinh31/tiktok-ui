@@ -12,6 +12,7 @@ export type Profile = {
   avatar?: string;
   dob?: string;
   gender?: string;
+  phone?: string;
   bio?: string;
   enable: boolean;
 };

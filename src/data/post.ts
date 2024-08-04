@@ -5,7 +5,8 @@ export const Post: PostType[] = [
   {
     id: 1,
     profile: Profile,
-    videoUrl: "/videos/tranhalinh.mp4",
+    videoUrl:
+      "https://videocdn.cdnpk.net/videos/2095d647-b8b4-4050-ade4-19c326dad54d/horizontal/previews/clear/large.mp4?token=exp=1722786267~hmac=d8c68ec5604ba59a75dd8bf3dddf5370bd790314529ee68abfe584f1ccab7c6e",
     tags: ["xuhuong", "tranhalinh"],
     music: "Em của ngày hôm qua PSVN remix Sơn Tùng MTp - PHÁP SƯ VIỆT NAM",
     hearts: 13000,
