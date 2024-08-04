@@ -7,6 +7,7 @@ export type Profile = {
   lastName: string;
   fullName: string;
   username: string;
+  password: string;
   email?: string;
   avatar?: string;
   dob?: string;
@@ -17,9 +18,9 @@ export type Profile = {
 
 export type Post = {
   id: number;
-  userId: number;
-  title: string;
-  description: string;
+  profile: Profile;
+  description?: string;
+  videoUrl: string;
   tags: string[];
   music: string;
   hearts: number;
