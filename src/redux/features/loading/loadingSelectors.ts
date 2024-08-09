@@ -1,0 +1,1 @@
+export const selectIsLoading = (state: any) => state.loading.isLoading;

@@ -1,6 +1,12 @@
 export const avatarFakeURL = "https://placehold.co/40";
 
-export const POST_ACTION = {
+export const REGEX = {
+  EMAIL: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i,
+  PASSWORD: /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?`~])[A-Za-z\d!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?`~]{8,}$/,
+  NICKNAME: /^[a-zA-Z0-9._]+$/,
+};
+
+export const VIDEO_ACTION = {
   LIKE: "like",
   COMMENT: "comment",
   SAVE: "save",

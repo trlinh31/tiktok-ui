@@ -1,36 +1,35 @@
 import { LucideIcon } from "lucide-react";
 export type IconType = LucideIcon;
 
-export type Profile = {
-  id: number;
-  firstName: string;
-  lastName: string;
-  fullName: string;
-  username: string;
-  password: string;
-  email?: string;
-  avatar?: string;
-  dob?: string;
-  gender?: string;
-  phone?: string;
-  bio?: string;
+export interface User {
+  _id: string;
+  followers?: string[];
+  following?: string[];
   enable: boolean;
-};
+  createdAt: Date;
+  updatedAt: Date;
+  fullName: string;
+  nickname: string;
+  email: string;
+  password: string;
+  avatar?: string;
+  bio?: string;
+  __v?: number;
+}
 
-export type Post = {
-  id: number;
-  profile: Profile;
-  description?: string;
-  videoUrl: string;
+export interface Video {
+  _id: string;
   tags: string[];
-  music: string;
-  hearts: number;
-  comments: number;
-  saves: number;
-  shares: number;
-  createdAt: string;
-};
-
+  likes: string[];
+  createdAt: Date;
+  updatedAt: Date;
+  description: string;
+  videoUrl: string;
+  __v: number;
+  user: User;
+  likesCount: number;
+  commentsCount: number;
+}
 export type MenuItem = {
   title: string;
   path: string;

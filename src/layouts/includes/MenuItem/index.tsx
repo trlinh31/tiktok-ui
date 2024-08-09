@@ -12,8 +12,8 @@ export default function MenuItem({ title, icon, isCurrentPage }: { title: string
       <div className='flex items-center dark:hover:bg-hoverDark hover:bg-hoverLight p-[12px]'>
         <Icon strokeWidth={2.5} size={26} color={isCurrentPage ? "#fe2c55" : `${theme === "light" ? "#000" : "#fff"}`} />
         <p
-          className={`lg:block hidden pl-[12px] mt-0.5 font-bold text-[17px] dark:text-white ${
-            isCurrentPage ? "text-primary dark:text-primary" : "text-black"
+          className={`lg:block hidden pl-[12px] mt-0.5 font-bold text-[17px] ${
+            isCurrentPage ? "text-primary dark:text-primary" : "text-black dark:text-white "
           }`}>
           {t(title)}
         </p>

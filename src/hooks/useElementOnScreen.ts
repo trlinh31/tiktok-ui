@@ -1,17 +1,17 @@
 import { useState, useEffect, useMemo } from "react";
 export default function useElementOnScreen(options: any, targetRef: any) {
   const [isVisible, setIsVisible] = useState();
-  const callbackFunc = (entries: any) => {
+  const callbackFunction = (entries: any) => {
     const [entry] = entries;
     setIsVisible(entry.isIntersecting);
   };
 
-  const optionMemo = useMemo(() => {
+  const optionsMemo = useMemo(() => {
     return options;
   }, [options]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(callbackFunc, optionMemo);
+    const observer = new IntersectionObserver(callbackFunction, optionsMemo);
     const currentTarget = targetRef.current;
     if (currentTarget) {
       observer.observe(currentTarget);
@@ -22,7 +22,7 @@ export default function useElementOnScreen(options: any, targetRef: any) {
         observer.unobserve(currentTarget);
       }
     };
-  }, [optionMemo, targetRef]);
+  }, [targetRef, optionsMemo]);
 
   return isVisible;
 }

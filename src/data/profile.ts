@@ -1,12 +1,13 @@
-import { Profile as ProfileType } from "@/types";
+import { User } from "@/types";
 
-export const Profile: ProfileType = {
-  id: 1,
-  firstName: "Trần",
-  lastName: "Hà Linh",
+export const Profile: User = {
+  _id: "1",
   fullName: "Trần Hà Linh",
-  username: "tranhailinh",
+  nickname: "tranhailinh",
+  email: "tranhailinh@gmail.com",
   password: "123456",
   avatar: "/images/avatar.jpeg",
   enable: true,
+  createdAt: new Date(),
+  updatedAt: new Date(),
 };

@@ -1,7 +1,7 @@
-import { Post as PostType } from "@/types";
+import { Video as VideoType } from "@/types";
 import { Profile } from "@/data/profile";
 
-export const Post: PostType[] = [
+export const Video: VideoType[] = [
   {
     id: 1,
     profile: Profile,
